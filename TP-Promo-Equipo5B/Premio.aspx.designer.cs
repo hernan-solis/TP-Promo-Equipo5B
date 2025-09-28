@@ -11,7 +11,7 @@ namespace TP_Promo_Equipo5B
 {
 
 
-    public partial class Contact
+    public partial class WebForm1
     {
     }
 }
