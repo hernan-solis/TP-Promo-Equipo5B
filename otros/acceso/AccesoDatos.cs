@@ -24,7 +24,7 @@ namespace negocio
             //ruta para conectarse a la BD de Vale
            //  conexion = new SqlConnection ("server=(localdb)\\MSSQLLocalDB; database=CATALOGO_P3_DB; integrated security=true");
          
-            conexion = new SqlConnection ("server=.\\SQLEXPRESS; database=PROMOS_DB; integrated security=true");
+            conexion = new SqlConnection ("server=.\\SQLEXPRESS; database=CATALOGO_P3_DB; integrated security=true");
             comando = new SqlCommand();
         }
 
