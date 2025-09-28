@@ -14,7 +14,7 @@ namespace TP_Promo_Equipo5B
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack) {
-                tbxCodigoVaucher.Text = "XXXXXXXXXXXXXXX";
+                tbxCodigoVaucher.Attributes["placeholder"] = "XXXXXXXXXXXXXXX";
             }
             
         }
@@ -28,11 +28,7 @@ namespace TP_Promo_Equipo5B
                 Response.Redirect("Premio.aspx");
             }
             else {
-                //Muestra que no existe o ya fue utilizado
-                string mensaje = "Codigo erroneo o ya utilizado!";
-
-                // Esto inyecta un script JavaScript que se ejecuta cuando se carga la página
-                ClientScript.RegisterStartupScript(this.GetType(), "alert", $"alert('{mensaje}');", true);
+                Response.Redirect("CodigoErroneo.aspx");
             }
 
 
